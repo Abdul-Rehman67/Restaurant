@@ -4,8 +4,9 @@
 }
 .row_footer{
     background-color: #d1d8e0;
-    /* margin: 0px auto; */
+     /* margin: 0px auto; */
     padding: 20px 0px 20px 0px;
+    margin: auto 0px;
 }
 .row_content{ 
     margin: 0px auto;
