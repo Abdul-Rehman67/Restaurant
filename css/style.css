@@ -32,3 +32,46 @@
     list-style-type: none;
     display: block;
 }
+.navitemf:shadow{
+    background-color: white;
+  
+}
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+.navbar-dark{
+    background-color:#30336b;
+}
+.nav-item{
+    text-align: center;
+    
+  
+    
+}
+.navbar-collapse:hover{
+    
+    text-align: left;
+}
+.mx-auto{
+    
+    
+    
+}
+.fa-home,.fa-address-card,.fa-ellipsis-v,.fa-address-book{
+    margin: 9px;
+
+}
+.fa-phone{
+    margin-left: -2px;
+}
+.fa-fax{
+    margin-left: -2px;
+}
+.text-center{
+    
+
+}
+.fa-twitter,.fa-youtube,.fa-google-plus,.fa-facebook-square,.fa-linkedin,.fa-envelope-open{
+       margin: 15px;
+}
