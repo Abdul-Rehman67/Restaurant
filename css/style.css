@@ -75,3 +75,6 @@ body{
 .fa-twitter,.fa-youtube,.fa-google-plus,.fa-facebook-square,.fa-linkedin,.fa-envelope-open{
        margin: 15px;
 }
+.btn-primary{
+    background:#30336b;
+}
