@@ -32,10 +32,10 @@
     list-style-type: none;
     display: block;
 }
-.navitemf:shadow{
-    background-color: white;
+/* .navitemf{
+   padding-left: 70px;
   
-}
+} */
 body{
     padding: 50px 0px 0px 0px;
     z-index: 0;
@@ -45,10 +45,11 @@ body{
 }
 .nav-item{
     text-align: center;
-    
+        
   
     
 }
+
 .navbar-collapse:hover{
     
     text-align: left;
@@ -77,4 +78,36 @@ body{
 }
 .btn-primary{
     background:#30336b;
+}
+.card-header{
+    background-color: #30336b;
+
+}
+.card-body{
+    background-color: #CAD3C8;
+}
+.thead{
+    background-color: #30336b;
+    color: white;
+}
+.table{
+    background-color:  #CAD3C8 ;
+    margin-top: 30px;
+}
+.tableheading{
+    margin-left:2px ;
+}
+td{
+    font-style: italic;
+    font-weight: 200px;
+}
+.media-body{
+    margin-left: 10px;
+}
+.media{
+    margin-right: 20px;
+    margin-top: 25px;
+}
+.card{
+    margin-top: 5px;
 }
