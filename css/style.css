@@ -111,3 +111,42 @@ td{
 .card{
     margin-top: 5px;
 }
+.badge-pill{
+    background-color: #30336b ;
+    margin-left: 10px;
+}
+.badge-info{
+    background-color: #CAD3C8;
+    margin-left: 10px;
+}
+.reserveform{
+    margin-top: 10px;
+   
+    
+}
+/* .noofpeople{
+    margin-top: 20px;
+} */
+#people{
+   
+}
+.reservebtn{
+    margin-top: 50px;
+}
+.noofpeople{
+    margin-right: 60px;
+}
+.badge-danger{
+    margin-left: 10px;
+}
+.nav-item{
+    display: inline-block;
+
+}
+.tab-content{
+    border-left: solid 0.5px #ddd;
+    border-right: solid 0.5px #ddd;
+    border-bottom: solid 0.5px #ddd;
+    padding: 10px;
+    border-radius: 3px;
+}

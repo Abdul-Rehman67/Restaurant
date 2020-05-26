@@ -29,7 +29,7 @@
                 <li class="nav-item "><a class="nav-link active" href="index.html"><i class="fa fa-home"></i>Home</a></li>
                 <li class="nav-item "><a class="nav-link" href="./aboutus.html"><i class="fa fa-address-card"></i>About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-ellipsis-v"></i>Menu</a></li>
-                <li class="nav-item"><a class="nav-link " href="#"><i class="fa fa-address-book"></i>Contact</a></li>
+                <li class="nav-item"><a class="nav-link " href="contactus.html"><i class="fa fa-address-book"></i>Contact</a></li>
         </ul> 
         </div>
     </div>
@@ -49,6 +49,11 @@
                 <div class="col-sm-3 align-self-top">
                     <img src="img/logo.png"  class="img-fluid">
                 </div>
+                <div class="col-12 col-sm-3">
+                  <a href="#reserveform">  <button type="submit" class="btn btn-warning reservebtn">Reserve A Table</button></a>
+
+
+                </div>
                 
             </div>
            
@@ -63,7 +68,7 @@
                 <div class="media">
                     <img src="img/uthappizza.png" class="d-flex image-thumbnail" alt="uthappizza">
                     <div class="media-body">
-                      <h2>Uthappizza</h2>
+                      <h2>Uthappizza<span class="badge badge-info badge-primary">Hot</span><span class="badge badge-pill badge-primary">Rs.1155</span></h2>
                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
               
                     </div>
@@ -74,13 +79,20 @@
 
 
         <div class="row row_content align-items-center">
-            <div class= "col col-sm-4 col-md-3">
+            <div class= "col-12 col-sm-4 col-md-3">    
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm-8 col-md-9">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col col-sm-8 col-md-9">     
+            <div class="media">
+            <div class="media-body" >
+                <h2>Weekend Grand Buffet<span class="badge badge-danger">NEW</span><span class="badge badge-pill badge-primary">Rs.1500</span></h2>
+                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just Rs. 1500  per person </p>
             </div>
+                
+                    <img src="img/buffet.png" class="d-flex image-thumbnail align-self-top">    
+
+        </div>
+    
         </div>
 
         <div class="row row_content align-items-center">
@@ -92,7 +104,7 @@
                     <img src="img/No. 30368.jpg" class="d-flex image-thumbnail align-self-top" height="120" width="110">
                     <div class="media-body">
                         <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
+                <h4><span class="badge badge-info">Executive Chef</span></h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
             
                     </div>
@@ -101,6 +113,66 @@
                 </div>
         </div>
     </div>
+    <div class="row row_content">
+    <div class="col-8 col-md-8 offset-2">
+            <div class="card">
+        <div class="card-header bg-warning">
+            <h3>Reserve A Table</h3>
+        </div>
+        
+            
+                <form   id="reserveform">  
+                    <div class="row form-group">
+                        
+                       <label for="people" class="col-12 col-md-2 offset-1 col-form-label noofpeople">No. Of People</label>
+                       <div class="col-11 offset-1 col-md-7 align-self-center">                      
+                        <input type="radio" name="people" id="people" value="1"><span>1</span>
+                        <input type="radio" name="people" id="people" value="2"><span>2</span>
+                        <input type="radio" name="people" id="people" value="3"><span>3</span>
+                        <input type="radio" name="people" id="people" value="4"><span>4</span>
+                        <input type="radio" name="people" id="people" value="5"><span>5</span>
+                        <input type="radio" name="people" id="people" value="6"><span>6</span>
+                  
+                              </div>
+                            
+                        
+                  
+                
+                   
+  
+                 <!-- <div class="row form-group">   
+                    <div class="col-12 col-md-4">            
+                 
+                 <input type="text" id="date" placeholder="Date" class="form-control reserveform">
+                </div>
+ 
+                 <div class="col-12 col-md-3"> 
+                <input type="text" id="date" placeholder="Time" class="form-control reserveform"></div>
+            </div>
+        </div> -->
+        <div class="row form-group align-self-center">
+            <!-- <label for="telno" class="col-12 col-md-2 col-form-label">Contact Tel.</label> -->
+            <div class="col-10 offset-1 col-md-5 offset-md-2 ">
+                <input type="text" placeholder="Date" class="form-control reserveform" id="reservedate">
+
+            </div>
+            <div class="col-10 offset-1  col-md-4">
+                <input type="text" placeholder="Time" class="form-control reserveform">
+            </div>
+            <div class="col-10 offset-2 col-">
+            <button type="submit" class="btn btn-warning reservebtn">Reserve</button>
+        </div>
+        </div>
+          
+                </form>
+            </div>
+            </div>
+        
+       
+    </div>
+</div>
+</div>
+</div>
 
     <footer class="row_footer">
         <div class="container">
