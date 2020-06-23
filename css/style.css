@@ -81,6 +81,7 @@ body{
 }
 .card-header{
     background-color: #30336b;
+  
 
 }
 .card-body{
@@ -149,4 +150,7 @@ td{
     border-bottom: solid 0.5px #ddd;
     padding: 10px;
     border-radius: 3px;
+}
+.card-header-accordin{
+    color: white;
 }
