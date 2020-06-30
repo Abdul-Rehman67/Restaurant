@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <title>Ristorante Con Fusion</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,81 +12,168 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    
+
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top ">
-        <div class="container"> 
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" class="image-fluid" height="40" width="40"></a> 
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" class="image-fluid" height="40"
+                    width="40"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navitem">
-                <span class="navbar-toggler-icon"></span> 
+                <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navitem">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item "><a class="nav-link active" href="index.html"><i class="fa fa-home"></i>Home</a></li>
-                <li class="nav-item "><a class="nav-link" href="./aboutus.html"><i class="fa fa-address-card"></i>About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-ellipsis-v"></i>Menu</a></li>
-                <li class="nav-item"><a class="nav-link " href="contactus.html"><i class="fa fa-address-book"></i>Contact</a></li>
-        </ul> 
-        <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginmodal">Signin</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a class="nav-link active" href="index.html"><i
+                                class="fa fa-home"></i>Home</a></li>
+                    <li class="nav-item "><a class="nav-link" href="./aboutus.html"><i
+                                class="fa fa-address-card"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-ellipsis-v"></i>Menu</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contactus.html"><i
+                                class="fa fa-address-book"></i>Contact</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <!-- <a data-toggle="modal" data-target="#loginmodal">Signin</a> -->
 
-        </span>
+                </span>
+            </div>
         </div>
+    </nav>
+
+    <div id="loginmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="model-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                    <div class="col-12">
+                        <!-- <div class="card">
+                            <div class="card-header bg-warning"> -->
+                                <h3>Reserve A Table</h3>
+                            </div>
+                    <div class="model-body">
+                           
+                
+                
+                                    <form id="reserveform">
+                                        <div class=" form-row">
+                
+                                            <label for="people" class=" col-sm-12 col-md-12 col-lg-2 offset-1 col-form-label ">No. Of
+                                                People</label>
+                                            <div class=" col-sm-12 col-md-12 offset-1 col-lg-6 ">
+                                                <input type="radio" name="people" id="people" value="1">&nbsp; <span>1&nbsp;</span>
+                                                <input type="radio" name="people" id="people" value="2">&nbsp; <span>2&nbsp;</span>
+                                                <input type="radio" name="people" id="people" value="3">&nbsp; <span>3&nbsp;</span>
+                                                <input type="radio" name="people" id="people" value="4">&nbsp; <span>4&nbsp;</span>
+                                                <input type="radio" name="people" id="people" value="5">&nbsp; <span>5&nbsp;</span>
+                                                <input type="radio" name="people" id="people" value="6">&nbsp; <span>6&nbsp;</span>
+                                            </div>
+                
+                                            </div>
+
+
+                                            <div class="form-row">   
+                                            <div class="col-2 col-md-3 col-lg-3 offset-1">
+                                            <label  class="col-form-label ">Section</label>
+                                        </div>
+                                               <div class="col-2 col-md-3 col-lg-3">
+                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                    <label class="btn btn-danger active">
+                                                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Smoking
+                                                    </label>
+                                                    <label class="btn btn-success">
+                                                      <input type="radio" name="options" id="option2" autocomplete="off"> Non-Smoking
+                                                    </label>
+                                                    
+                                                </div>
+                                                </div>
+                                            
+
+                                           
+                        
+                                                </div>
+                
+                
+                
+
+                                 <div class = "form-row">
+
+                                      <div class="col-7 col-lg-2  col-md-3 offset-1 mt-0">
+                  
+                                        <label  class=" col-form-label">Date & Time</label>
+                                    </div>
+                                        
+
+                                        
+                                            <div class=" form-group col-5 col-md-3  offset-sm-1 col-lg-3 ">
+ 
+                                                    <input type="text" placeholder="Date" class="form-control datetime"
+                                                        id="reservedate">
+                
+                                                </div>
+                                                <div class="col-5 col-md-3 col-lg-3  time">
+                                                    <input type="text" placeholder="Time" class="form-control  ">
+                                                </div>
+                                                
+                                                <div class="form-row ">
+                                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+  
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                    
     </div>
-</nav>
-
- <div id="loginmodal" class="modal fade" role="dialog"> 
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content"> 
-
-<div class="model-header">
-    <h3 class="modal-title">Login</h3>
-            <button type="button" class="close" data-dismiss="modal">
-                &times; 
-
-    </button>
-    <div class="model-body">
-        <h2>Hello World</h2>
+            
+                        </form>
+                        
 
 
-    </div>
+                    </div>
 
 
-</div>
+                
 
-            </div>   
-        </div>
+            
+        
 
-    </div>
+    
 
-</div>
 
-     
-     
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6 ">
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                        lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-sm-3 align-self-top">
-                    <img src="img/logo.png"  class="img-fluid">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3">
-                  <a href="#reserveform">  <button type="submit" class="btn btn-warning reservebtn">Reserve A Table</button></a>
+                    <a data-toggle="modal" data-target="#loginmodal"> <button type="submit"
+                            class="btn btn-warning reservebtn">Reserve A Table</button></a>
 
 
                 </div>
-                
+
             </div>
-           
+
         </div>
-    </header>   
+    </header>
     <div class="container">
         <div class="row row_content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
@@ -96,115 +183,67 @@
                 <div class="media">
                     <img src="img/uthappizza.png" class="d-flex image-thumbnail" alt="uthappizza">
                     <div class="media-body">
-                      <h2>Uthappizza<span class="badge badge-info badge-primary">Hot</span><span class="badge badge-pill badge-primary">Rs.1155</span></h2>
-                       <p> A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-              
+                        <h2>Uthappizza<span class="badge badge-info badge-primary">Hot</span><span
+                                class="badge badge-pill badge-primary">Rs.1155</span></h2>
+                        <p> A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
+                            olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+
                     </div>
                 </div>
-                
-                </div>
-        </div>
 
-
-        <div class="row row_content align-items-center">
-            <div class= "col-12 col-sm-4 col-md-3">    
-                <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm-8 col-md-9">     
-            <div class="media">
-            <div class="media-body" >
-                <h2>Weekend Grand Buffet<span class="badge badge-danger">NEW</span><span class="badge badge-pill badge-primary">Rs.1500</span></h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just Rs. 1500  per person </p>
-            </div>
-                
-                    <img src="img/buffet.png" class="d-flex image-thumbnail align-self-top">    
+        </div>
 
-        </div>
-    
-        </div>
 
         <div class="row row_content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
+                <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm-8 col-md-9">
                 <div class="media">
-                    <img src="img/No. 30368.jpg" class="d-flex image-thumbnail align-self-top" height="120" width="110">
                     <div class="media-body">
-                        <h2>Alberto Somayya</h2>
-                <h4><span class="badge badge-info">Executive Chef</span></h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-            
+                        <h2>Weekend Grand Buffet<span class="badge badge-danger">NEW</span><span
+                                class="badge badge-pill badge-primary">Rs.1500</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing
+                            appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft
+                            drinks. All for just Rs. 1500 per person </p>
                     </div>
-                </div>
+
+                    <img src="img/buffet.png" class="d-flex image-thumbnail align-self-top">
 
                 </div>
-        </div>
-    </div>
-    <div class="row row_content">
-    <div class="col-8 col-md-8 offset-2">
-            <div class="card">
-        <div class="card-header bg-warning">
-            <h3>Reserve A Table</h3>
-        </div>
-        
-            
-                <form   id="reserveform">  
-                    <div class="row form-group">
-                        
-                       <label for="people" class="col-12 col-md-2 offset-1 col-form-label noofpeople">No. Of People</label>
-                       <div class="col-11 offset-1 col-md-7 align-self-center">                      
-                        <input type="radio" name="people" id="people" value="1"><span>1</span>
-                        <input type="radio" name="people" id="people" value="2"><span>2</span>
-                        <input type="radio" name="people" id="people" value="3"><span>3</span>
-                        <input type="radio" name="people" id="people" value="4"><span>4</span>
-                        <input type="radio" name="people" id="people" value="5"><span>5</span>
-                        <input type="radio" name="people" id="people" value="6"><span>6</span>
-                  
-                              </div>
-                            
-                        
-                  
-                
-                   
-  
-                 <!-- <div class="row form-group">   
-                    <div class="col-12 col-md-4">            
-                 
-                 <input type="text" id="date" placeholder="Date" class="form-control reserveform">
-                </div>
- 
-                 <div class="col-12 col-md-3"> 
-                <input type="text" id="date" placeholder="Time" class="form-control reserveform"></div>
-            </div>
-        </div> -->
-        <div class="row form-group align-self-center">
-            <!-- <label for="telno" class="col-12 col-md-2 col-form-label">Contact Tel.</label> -->
-            <div class="col-10 offset-1 col-md-5 offset-md-2 ">
-                <input type="text" placeholder="Date" class="form-control reserveform" id="reservedate">
 
             </div>
-            <div class="col-10 offset-1  col-md-4">
-                <input type="text" placeholder="Time" class="form-control reserveform">
+
+            <div class="row row_content align-items-center">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <h3>Meet our Culinary Specialists</h3>
+                </div>
+                <div class="col col-sm-8 col-md-9">
+                    <div class="media">
+                        <img src="img/No. 30368.jpg" class="d-flex image-thumbnail align-self-top" height="120"
+                            width="110">
+                        <div class="media-body">
+                            <h2>Alberto Somayya</h2>
+                            <h4><span class="badge badge-info">Executive Chef</span></h4>
+                            <p>Award winning three-star Michelin chef with wide International experience having worked
+                                closely with whos-who in the culinary world, he specializes in creating mouthwatering
+                                Indo-Italian fusion experiences. </p>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-10 offset-2 col-">
-            <button type="submit" class="btn btn-warning reservebtn">Reserve</button>
         </div>
-        </div>
-          
-                </form>
-            </div>
-            </div>
         
-       
     </div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
 
     <footer class="row_footer">
         <div class="container">
-            <div class="row" >              
+            <div class="row">
                 <div class="col-4 col-sm-3 offset-1 ">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
@@ -217,18 +256,18 @@
                 <div class="col-7 col-sm-4 ">
                     <h5>Our Address</h5>
                     <address class="address">
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-                      HONG KONG<br>
-                
-		             <i class="fa fa-phone fa-lg"></i>+852 1234 5678<br>
-                     <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+
+                        <i class="fa fa-phone fa-lg"></i>+852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
+                        Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    </address>
                 </div>
                 <div class="col-12 col-sm-4  align-self-center">
                     <div class="text-center">
-                        
+
                         <a href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
                         <a href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook-square"></i></a>
                         <a href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
@@ -236,13 +275,13 @@
                         <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                         <a href="mailto:"><i class="fa fa-envelope-open"></i></a>
                     </div>
-           </div>
-           <div class="row row_footer justify-content-center ">             
-                <div class="col-auto ">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
-           </div>
-        </div>
+                <div class="row row_footer justify-content-center ">
+                    <div class="col-auto ">
+                        <p>© Copyright 2018 Ristorante Con Fusion</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

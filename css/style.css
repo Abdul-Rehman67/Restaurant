@@ -134,8 +134,9 @@ td{
 .reservebtn{
     margin-top: 50px;
 }
-.noofpeople{
-    margin-right: 60px;
+.noofpeoples{
+   
+    margin-right: 50px;
 }
 .badge-danger{
     margin-left: 10px;
@@ -154,3 +155,23 @@ td{
 .card-header-accordin{
     color: white;
 }
+.date{
+    margin-left: 10px;
+}
+.time{
+    margin-right: 0px;
+}
+.close{
+    margin-right: 10px;
+    size: 30px;
+}
+.nonsmoking{
+
+    /* margin-right: 50px;
+    margin-top: 15px; */
+
+}
+/* .smoking{
+    margin-top: 15px; */
+
+
